@@ -1,50 +1,30 @@
-# React + TypeScript + Vite
+# SomnoTech
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Ver el sitio en línea: 🔗
 
-Currently, two official plugins are available:
+Accede al sitio en **[somnotech.netlify.app](https://somnotech.netlify.app/)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Tabla de Contenidos: 📑
 
-## Expanding the ESLint configuration
+- [Acerca de la aplicación](#acerca-de-la-aplicación-)
+- [Tecnologías](#tecnologias)
+- [Instalación](#instalación)
+- [Arquitectura del Proyecto](#arquitectura-del-proyecto)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+# Acerca de la aplicación 📚
 
-- Configure the top-level `parserOptions` property like this:
+La capacidad de medir los niveles de salud a través de un reloj inteligente ofrece monitoreo en tiempo real de indicadores clave como la frecuencia cardíaca, el oxígeno en sangre y el sueño, todo desde la comodidad de tu muñeca. Esto permite un control personalizado y accesible, fomentando un estilo de
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+# Tecnologías: ☕️ ⚛️
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- **React** `^18.3.1`
+- **Typescript** `^5.5.3`
+- **Material UI** `^6.1.3`
+- **Styled components** `^6.1.13`
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+# Instalación
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. Clonar proyecto
+2. `npm install`
+3. `npm run dev`
+4. Y ahora puedes visitar el sitio en la URL http://localhost:3000
