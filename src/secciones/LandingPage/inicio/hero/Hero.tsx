@@ -10,7 +10,7 @@ import StyledButton from "src/shared/styled-button/StyledButton";
 
 const Hero = () => {
   return (
-    <Box sx={{ position: "relative", pb: { xs: 4, md: 4 } }}>
+    <Box sx={{ position: "relative", pb: { xs: 4, md: 4 }, pt: 4 }}>
       <Stack
         direction={{ xs: "column", md: "row" }}
         spacing={{ xs: 4, md: 2 }}
@@ -27,14 +27,12 @@ const Hero = () => {
             variant="h1"
             sx={{
               fontWeight: "bold",
-              fontSize: { xs: "2.5rem", md: "3rem", lg: "4rem" },
+              fontSize: { xs: "2.5rem", md: "3rem", lg: "rem" },
               lineHeight: 1.2,
               mb: { xs: 1, md: 1 },
             }}
           >
-            Salud confiable
-            <br />
-            para todos
+            Cuidado Médico de Confianza para Toda la Familia
           </Typography>
           <Typography
             width="100%"
@@ -44,12 +42,13 @@ const Hero = () => {
               fontSize: { xs: "1rem", md: "1.125rem" },
             }}
           >
-            La recuperación médica está enfocada en ayudarte a redescubrir las
-            mejores versiones de ti mismo.
+            Somnotech es una innovadora plataforma médica que conecta a los
+            pacientes con un equipo de médicos especializados. Contamos con un
+            dispositivo Smartband que monitorea en tiempo real los signos
+            vitales, mejora tu calidad de vida.
           </Typography>
           <Stack direction="row" spacing={2} sx={{ mt: { xs: 2, md: 3 } }}>
-            <StyledButton>Obtén información</StyledButton>
-            <StyledButton variant="outlined">Leer más</StyledButton>
+            <StyledButton>Más información</StyledButton>
           </Stack>
         </Stack>
         <Box
