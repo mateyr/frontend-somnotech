@@ -1,6 +1,7 @@
 import Grid from "@mui/material/Grid";
 import MuiLink from "@mui/material/Link";
-import { Enlace, enlaces } from "../navegacion";
+import { Enlace } from "../navegacion/interfaces";
+import { enlaces } from "../navegacion/enlace.data";
 import FooterSectionTitulo from "./FooterSectionTitulo";
 
 const informacion: Enlace[] = [

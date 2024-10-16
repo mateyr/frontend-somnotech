@@ -1,13 +1,13 @@
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import Box from "@mui/material/Box";
+import Stack from "@mui/material/Stack";
 import StyledButton from "src/shared/styled-button/StyledButton";
 
 const AuthNavegacion = () => {
   return (
-    <Box sx={{ "& button:first-of-type": { mr: 2 } }}>
+    <Stack spacing={3} direction="row" sx={{ justifyContent: "center" }}>
       <StyledButton variant="outlined">Crear una cuenta</StyledButton>
       <StyledButton endIcon={<ArrowForwardIcon />}>Iniciar sesión</StyledButton>
-    </Box>
+    </Stack>
   );
 };
 
