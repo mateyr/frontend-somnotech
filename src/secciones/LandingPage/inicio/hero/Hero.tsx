@@ -28,7 +28,6 @@ const Hero = () => {
             sx={{
               fontWeight: "bold",
               fontSize: { xs: "2.5rem", md: "3rem", lg: "rem" },
-              lineHeight: 1.2,
               mb: { xs: 1, md: 1 },
             }}
           >

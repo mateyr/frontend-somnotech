@@ -1,10 +1,10 @@
 import CssBaseline from "@mui/material/CssBaseline";
 import { ThemeProvider } from "@mui/material/styles";
+import { Route, Routes } from "react-router-dom";
 import { themePersonalizado } from "./config/theme/themePersonalizado";
+import { routers } from "./secciones/LandingPage";
 import Footer from "./secciones/LandingPage/inicio/footer/Footer";
 import Header from "./secciones/LandingPage/inicio/header/Header";
-import { RouterProvider } from "react-router-dom";
-import { routers } from "./secciones/LandingPage";
 
 function App() {
   return (
@@ -12,7 +12,11 @@ function App() {
       <ThemeProvider theme={themePersonalizado}>
         <CssBaseline />
         <Header />
-        <RouterProvider router={routers} />
+        <Routes>
+          {routers.map((route) => (
+            <Route key={route.id} path={route.path} element={route.element} />
+          ))}
+        </Routes>
         <Footer />
       </ThemeProvider>
     </>

@@ -7,6 +7,7 @@ import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import FooterSocialLinks from "./FooterSocialLinks";
 import FooterNavegacion from "./FooterNavegacion";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
