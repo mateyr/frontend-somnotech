@@ -10,8 +10,8 @@ const informacion: Enlace[] = [
     path: "#",
   },
   {
-    label: "Trayectoria",
-    path: "#",
+    label: "Servicios",
+    path: "servicios",
   },
   {
     label: "Estamos contratando",
@@ -59,11 +59,7 @@ const FooterNavigation = () => {
       <Grid item xs={12} md={4}>
         <FooterSectionTitulo title="Información" />
         {informacion.map(({ label, path }, index) => (
-          <NavigationItem
-            key={index + path}
-            label={label}
-            path={/* path */ "#"}
-          />
+          <NavigationItem key={index + path} label={label} path={path} />
         ))}
       </Grid>
       <Grid item xs={12} md={4}>

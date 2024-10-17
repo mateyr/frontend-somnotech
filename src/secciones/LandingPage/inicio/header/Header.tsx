@@ -1,16 +1,17 @@
 // TODO: Mejorar un error de la consola del navegador
 
-import Box from "@mui/material/Box";
-import IconButton from "@mui/material/IconButton";
-import Menu from "@mui/icons-material/Menu";
-import Stack from "@mui/material/Stack";
-import { useState } from "react";
-import useMediaQuery from "@mui/material/useMediaQuery";
-import { useTheme } from "@mui/material/styles";
 import CloseIcon from "@mui/icons-material/Close";
-import Navegacion from "../navegacion/Navegacion";
-import AuthNavegacion from "../navegacion/AuthNavegacion";
+import Menu from "@mui/icons-material/Menu";
+import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
+import IconButton from "@mui/material/IconButton";
+import Stack from "@mui/material/Stack";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import { useState } from "react";
+import AuthNavegacion from "../navegacion/AuthNavegacion";
+import Navegacion from "../navegacion/Navegacion";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [visibleMenu, setVisibleMenu] = useState(true);
@@ -33,7 +34,9 @@ const Header = () => {
           alignItems: "center",
         }}
       >
-        <Box component="img" src="public/imagenes/logo.png" />
+        <Link to={"/"}>
+          <Box component="img" src="/imagenes/logo.png" />
+        </Link>
 
         {!matchMobileView && (
           <>
@@ -54,6 +57,7 @@ const Header = () => {
               left: "50%",
               transform: "translateX(-50%)",
               backgroundColor: "background.paper",
+              display: matchMobileView ? "block" : "none",
             }}
           >
             <Navegacion />
