@@ -7,13 +7,15 @@ import Productos from "./productos/Productos";
 
 const Inicio = () => {
   return (
-    <Container>
+    <>
       <Hero />
-      <Productos />
-      <Equipo />
-      <Precios />
-      <Contacto />
-    </Container>
+      <Container>
+        <Productos />
+        <Equipo />
+        <Precios />
+        <Contacto />
+      </Container>
+    </>
   );
 };
 

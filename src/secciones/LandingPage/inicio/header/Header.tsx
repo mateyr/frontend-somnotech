@@ -23,12 +23,12 @@ const Header = () => {
   };
 
   return (
-    <Container maxWidth={false} sx={{ maxWidth: "1400px" }}>
+    <Container id="header" maxWidth={false} sx={{ maxWidth: "1400px" }}>
       <Stack
         position="relative"
         direction="row"
         sx={{
-          px: 4,
+          px: { xs: 1, md: 4 },
           py: 2,
           justifyContent: "space-between",
           alignItems: "center",
