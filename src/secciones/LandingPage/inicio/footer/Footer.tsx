@@ -57,13 +57,13 @@ const Footer = () => {
               <Box sx={{ display: "flex", alignItems: "center", mb: 2 }}>
                 <PhoneIcon sx={{ mr: 1 }} />
                 <Typography variant="subtitle1" sx={{ letterSpacing: 1 }}>
-                  +123 456 7890
+                  +505 88541236
                 </Typography>
               </Box>
               <Box sx={{ display: "flex", alignItems: "center", mb: 2 }}>
                 <LocationOnIcon sx={{ mr: 1 }} />
                 <Typography variant="subtitle1" sx={{ letterSpacing: 1 }}>
-                  123 Example St, City, Country
+                  Los Robles Managua, Nicaragua 
                 </Typography>
               </Box>
               <Box sx={{ display: "flex", alignItems: "center", mb: 2 }}>

@@ -6,6 +6,7 @@ import Precios from "./precios/Precios";
 import Productos from "./productos/Productos";
 import Header from "./header/Header";
 import Footer from "./footer/Footer";
+import Video from "./video/Video";
 
 const Inicio = () => {
   return (
@@ -14,6 +15,7 @@ const Inicio = () => {
       <Hero />
       <Container>
         <Productos />
+        <Video />
         <Equipo />
         <Precios />
         <Contacto />
