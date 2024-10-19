@@ -25,7 +25,7 @@ const getHeaders = () => {
 const BASE_URL = "http://192.168.195.248:8000/";
 
 class ApiMethods {
-  static apiRequest(method: string, url: string, body = {}) {
+  static apiRequest(method: string, url: string) {
     url = `${BASE_URL}${url}`;
     const options = {
       method,

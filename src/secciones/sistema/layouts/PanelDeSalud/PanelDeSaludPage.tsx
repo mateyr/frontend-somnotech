@@ -271,7 +271,7 @@ const PanelDeSaludPage = () => {
         >
           <h3 id="frecuencia_cardiaca">Frecuencia cardíaca</h3>
           <Gauge
-            sx={(theme) => ({
+            sx={() => ({
               width: { xs: 320, md: 250 },
               color: "#123E8C",
               [`& .${gaugeClasses.valueArc}`]: {

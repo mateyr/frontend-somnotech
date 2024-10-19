@@ -69,7 +69,7 @@ const AUTHENTICATION = {
 };
 
 const MainLayout = ({ children }: MainLayoutProps) => {
-  const [session, setSession] = useState<Session | null>({
+  const [session] = useState<Session | null>({
     user: {
       name: "Rodian Matey",
       email: "mateyrodian@mateytech.com",
